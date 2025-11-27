@@ -81,7 +81,7 @@
   }
 
   section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
   }
 
   h2 {
@@ -97,12 +97,12 @@
     border: 1px solid var(--border);
   }
 
+  /* Skills grid */
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-
   @media (max-width: 780px) {
     .skills-grid {
       grid-template-columns: 1fr;
@@ -119,20 +119,27 @@
     display: inline-block;
     color: var(--text-muted);
   }
-
   .pill.accent {
     color: var(--accent);
     border-color: var(--accent);
   }
 
-  /* --- SIDE-BY-SIDE LAYOUT FOR IMAGES --- */
+  /* Side-by-side layout */
   .side-by-side {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
+    margin-bottom: 2rem;     /* Clean spacing under GIF block */
   }
 
-  .side-by-side img {
+  @media (max-width: 780px) {
+    .side-by-side {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .side-image, .gif-image {
     width: 260px;
     max-width: 30%;
     border-radius: 10px;
@@ -140,10 +147,7 @@
   }
 
   @media (max-width: 780px) {
-    .side-by-side {
-      flex-direction: column;
-    }
-    .side-by-side img {
+    .side-image, .gif-image {
       max-width: 100%;
       width: 100%;
     }
@@ -172,7 +176,6 @@
     color: var(--text-muted);
     margin-top: .2rem;
   }
-
 </style>
 </head>
 
@@ -224,6 +227,7 @@
       <span class="pill">Pandas</span>
       <span class="pill">NumPy</span>
       <span class="pill">Sci-kit Learn</span>
+      <span class="pill">PyTorch</span> <!-- ADDED -->
       <span class="pill">SciPy</span>
       <span class="pill">SQL</span>
       <span class="pill">Jupyter</span>
@@ -258,9 +262,8 @@
   <h2>Projects</h2>
   <div class="card">
 
-    <!-- SIDE BY SIDE BLOCK WITH GIF -->
     <div class="side-by-side">
-      <img src="turbulence.gif" alt="MHD Simulation GIF">
+      <img class="gif-image" src="turbulence1.gif" alt="MHD Simulation GIF">
 
       <div>
         <div class="entry-header">
@@ -272,7 +275,7 @@
         </div>
         <ul>
           <li>Built models for GPR and neural networks applied to turbulence simulations.</li>
-          <li>Extracted vorticity, Mach number, and high-dim field statistics.</li>
+          <li>Extracted vorticity, Mach number, and high-dimensional field statistics.</li>
           <li>Performed large-scale analysis on MSU supercomputing clusters.</li>
         </ul>
       </div>
@@ -285,7 +288,7 @@
       </div>
       <ul>
         <li>Modeled revenue by provider and site to identify coverage gaps.</li>
-        <li>Influenced budget planning and fiscal policy decisions.</li>
+        <li>Influenced budgeting and fiscal decision-making.</li>
       </ul>
     </div>
 
@@ -307,9 +310,8 @@
   <h2>Research Experience</h2>
   <div class="card">
 
-    <!-- SIDE BY SIDE BLOCK WITH SUN IMAGE -->
     <div class="side-by-side">
-      <img src="sun.png" alt="Solar Plasma Image">
+      <img class="side-image" src="sun1.png" alt="Solar Plasma Image">
 
       <div>
         <div class="entry-header">
@@ -319,7 +321,7 @@
         <ul>
           <li>Applied GPR and neural networks to magnetohydrodynamic simulations.</li>
           <li>Used linear algebra + numerical methods to analyze turbulence structures.</li>
-          <li>Ran simulation workflows on MSU high-performance clusters.</li>
+          <li>Ran simulation workflows on MSU’s HPC clusters.</li>
         </ul>
       </div>
     </div>
@@ -339,7 +341,7 @@
       </div>
       <ul>
         <li>Used analytics to guide decisions on budgets, staffing, performance, and operations.</li>
-        <li>Designed survey and encounter-report pipelines to improve outcomes.</li>
+        <li>Created survey/encounter reporting pipelines for client outcomes.</li>
       </ul>
     </div>
 
@@ -350,6 +352,7 @@
       </div>
       <ul>
         <li>Top 10% performer; strong communication and client interaction skills.</li>
+        <li>Used creative problem solving to adapt pitch strategies for diverse caller needs.</li> <!-- ADDED -->
       </ul>
     </div>
 
