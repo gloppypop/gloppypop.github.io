@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ryan McCormick | Data Science & ML Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Ryan McCormick — Physics student, data science and machine learning researcher with experience in analytics, ML for turbulence simulations, and program coordination."
+  />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --text-main: #111827;
+      --text-muted: #4b5563;
+      --border-subtle: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1.25rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.03em;
+      margin: 0;
+    }
+
+    header .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin: 0.1rem 0 0.5rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin: 1rem 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    nav a {
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      text-decoration: none;
+      color: var(--text-muted);
+      background: #f9fafb;
+    }
+
+    nav a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    section h2 {
+      font-size: 1.15rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 0 0 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.3rem;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .summary-text {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: #f9fafb;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .pill.accent {
+      border-color: var(--accent-soft);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 800px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .entry {
+      margin-bottom: 1rem;
+    }
+
+    .entry-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .entry-title {
+      font-weight: 600;
+    }
+
+    .entry-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .entry-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .entry ul {
+      margin: 0.4rem 0 0.2rem;
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .entry ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .edu-list {
+      font-size: 0.95rem;
+    }
+
+    .edu-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .small-muted {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Ryan McCormick</h1>
+      <p class="subtitle">
+        Data Science &amp; Machine Learning | Physics &amp; Computational Methods
+      </p>
+      <div class="contact">
+        <span>Jackson, MI</span>
+        <span>·</span>
+        <span>313-580-5412</span>
+        <span>·</span>
+        <a href="mailto:dwithgdi@gmail.com">dwithgdi@gmail.com</a>
+        <span>·</span>
+        <!-- Update this GitHub URL if needed -->
+        <a href="https://github.com/gloppypop" target="_blank" rel="noopener">github.com/gloppypop</a>
+        <!-- Optional LinkedIn:
+        <span>·</span>
+        <a href="https://linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a>
+        -->
+      </div>
+    </header>
+
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+
+    <!-- SUMMARY -->
+    <section id="summary">
+      <h2>Summary</h2>
+      <div class="card">
+        <p class="summary-text">
+          Physics B.S. candidate with a minor in Computational Math, Science, and Engineering at
+          Michigan State University. Research Assistant applying Gaussian process regression and neural
+          networks to turbulence and magnetohydrodynamic simulations on high-performance computing systems.
+          Program Coordinator with experience turning real-world operational data into decisions about
+          budgets, staffing, compensation, and client outcomes. Strong communicator and team leader with a
+          background in sales, supervision, and cross-functional collaboration.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card two-col">
+        <div>
+          <h3 style="margin-top:0; font-size:0.98rem;">Technical</h3>
+          <div class="pill-row" style="margin-bottom:0.4rem;">
+            <span class="pill accent">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Sci-kit Learn</span>
+            <span class="pill">SciPy</span>
+            <span class="pill">Jupyter</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Git</span>
+            <span class="pill">C</span>
+            <span class="pill">LaTeX</span>
+          </div>
+          <div class="pill-row">
+            <span class="pill">Gaussian Process Regression</span>
+            <span class="pill">Neural Networks</span>
+            <span class="pill">Statistical Modeling</span>
+            <span class="pill">Data Cleaning &amp; Wrangling</span>
+            <span class="pill">HPC Workflows</span>
+            <span class="pill">Numerical Methods</span>
+            <span class="pill">Linear Algebra</span>
+            <span class="pill">Matrix Algebra</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-top:0; font-size:0.98rem;">Soft Skills</h3>
+          <div class="pill-row">
+            <span class="pill accent">Communication</span>
+            <span class="pill">Team Leadership</span>
+            <span class="pill">Stakeholder Alignment</span>
+            <span class="pill">Creative Problem Solving</span>
+            <span class="pill">Conflict Resolution</span>
+            <span class="pill">Strategic Planning</span>
+            <span class="pill">Evidence-based Decisions</span>
+            <span class="pill">Active Listening</span>
+            <span class="pill">Customer/Client Focus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Two-Year Revenue Analysis for Recovery Housing Program</div>
+            <div class="entry-meta">Mid-Michigan Recovery Services · 2023–2025</div>
+          </div>
+          <div class="entry-subtitle">Python, Excel · Revenue modeling &amp; coverage analysis</div>
+          <ul>
+            <li>Built a two-year revenue model segmented by provider and site to understand program performance.</li>
+            <li>Identified coverage gaps and trends that directly informed fiscal-year budget planning.</li>
+            <li>Used findings to guide decisions on staffing, provider engagement, and long-term financial planning.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Employee Utilization &amp; Performance Analysis</div>
+            <div class="entry-meta">Mid-Michigan Recovery Services · 2023–2024</div>
+          </div>
+          <div class="entry-subtitle">Python, spreadsheets · Performance &amp; compensation analytics</div>
+          <ul>
+            <li>Tracked client hours, utilization, and revenue for an employee across multiple years.</li>
+            <li>Summarized performance in a clear, data-driven report used to advocate for a >10% pay increase.</li>
+            <li>Demonstrated the value of quantitative reasoning in HR and leadership decisions.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Exit Survey &amp; Encounter Reporting Pipeline</div>
+            <div class="entry-meta">Mid-Michigan Recovery Services · Ongoing</div>
+          </div>
+          <div class="entry-subtitle">Survey design, data analysis · Client outcomes &amp; inclusivity</div>
+          <ul>
+            <li>Designed and implemented exit surveys to collect structured data on client experience and outcomes.</li>
+            <li>Integrated encounter reporting to track staff performance and service utilization.</li>
+            <li>Analyzed feedback and census data to inform staffing, programming, and inclusivity practices.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">ML Tools for Turbulence &amp; MHD Simulations</div>
+            <div class="entry-meta">Michigan State University · 2024–Present</div>
+          </div>
+          <div class="entry-subtitle">Python, SciPy, scikit-learn · Gaussian processes &amp; neural networks</div>
+          <ul>
+            <li>Built Python scripts for Gaussian process regression and neural networks applied to turbulence data.</li>
+            <li>Implemented feature extraction (e.g., vorticity magnitude, Mach number statistics) from simulation outputs.</li>
+            <li>Used linear algebra and numerical methods to analyze flow and field structures in high-dimensional datasets.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research Experience</h2>
+      <div class="card">
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Undergraduate Research Assistant</div>
+            <div class="entry-meta">Michigan State University — Institute for Cyber-Enabled Research · 2024–Present</div>
+          </div>
+          <div class="entry-subtitle">
+            Machine learning for astrophysical turbulence &amp; magnetohydrodynamics on HPC systems
+          </div>
+          <ul>
+            <li>Apply Gaussian process regression and neural networks to simulations of turbulence and MHD flows.</li>
+            <li>Run and post-process large-scale simulations on MSU’s high-performance computing infrastructure.</li>
+            <li>Develop analysis pipelines to extract physical structure from noisy, high-dimensional simulation data.</li>
+            <li>Collaborate with faculty and graduate students; present results in research meetings and contribute to
+              publication pipelines.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Program Coordinator</div>
+            <div class="entry-meta">Mid-Michigan Recovery Services · Lansing, MI · 2023–Present</div>
+          </div>
+          <div class="entry-subtitle tagline">
+            Program operations, budget ownership, data-driven decision making, staff supervision
+          </div>
+          <ul>
+            <li>Identify and implement program improvements to enhance performance and client outcomes.</li>
+            <li>Lead budget development and enforce adherence while monitoring revenue and expenses.</li>
+            <li>Use analytics (revenue, utilization, survey data) to inform staffing and policy decisions.</li>
+            <li>Hire, supervise, and evaluate staff, supporting professional growth and accountability.</li>
+            <li>Collaborate across departments to coordinate clinical, financial, and housing operations.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Sales Agent</div>
+            <div class="entry-meta">Evolve Teleservices, Inc. &amp; MDHearingAid · 2019–2023</div>
+          </div>
+          <div class="entry-subtitle tagline">
+            Top 10% performer · Customer-focused communication &amp; negotiation
+          </div>
+          <ul>
+            <li>Consistently exceeded sales quotas in an incentive-based environment.</li>
+            <li>Developed strong communication and creative problem-solving skills handling diverse customers.</li>
+            <li>Used competitor data to adjust messaging and increase conversion rates.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Fundraiser</div>
+            <div class="entry-meta">Michigan State University Greenline · 2009–2013</div>
+          </div>
+          <div class="entry-subtitle tagline">
+            Donor relations, fundraising strategy, and outreach
+          </div>
+          <ul>
+            <li>Researched donor history and objectives to tailor outreach and appeals.</li>
+            <li>Cultivated relationships with alumni and supporters, personally processing $100,000+ in donations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card edu-list">
+        <div class="edu-item">
+          <strong>Bachelor of Science — Physics</strong>  
+          <div>Michigan State University · Minor in Computational Math, Science, and Engineering (CMSE)</div>
+          <div class="small-muted">Expected Graduation: December 2025</div>
+          <div class="small-muted">
+            Relevant coursework: Linear Algebra, Matrix Algebra, Numerical Analysis, Computational Physics, CMSE coursework
+          </div>
+        </div>
+        <div class="edu-item">
+          <strong>Associate in Science — Mathematics Transfer Program</strong>  
+          <div>Jackson College</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="small-muted">
+        Certifications: Adult &amp; Pediatric First Aid / CPR / AED (American Red Cross)
+      </div>
+    </section>
+  </div>
+</body>
+</html>
