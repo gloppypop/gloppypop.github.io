@@ -17,11 +17,9 @@
 
   body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   }
 
   .page {
@@ -37,15 +35,14 @@
   }
 
   h1 {
-    margin: 0;
     font-size: 2.2rem;
+    margin: 0;
     font-weight: 600;
   }
 
   .subtitle {
     margin-top: .25rem;
     color: var(--text-muted);
-    font-size: 1.05rem;
   }
 
   .contact {
@@ -54,7 +51,6 @@
     flex-wrap: wrap;
     gap: .75rem;
     color: var(--text-muted);
-    font-size: .95rem;
   }
 
   .contact a {
@@ -63,26 +59,25 @@
   }
 
   nav {
-    margin: 1rem 0 2rem;
+    margin: 1.25rem 0 2.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
   }
 
   nav a {
-    padding: .25rem .7rem;
-    background: var(--card-bg);
-    border-radius: 20px;
-    font-size: .85rem;
+    padding: .3rem .75rem;
+    border-radius: 18px;
     text-decoration: none;
     border: 1px solid var(--border);
+    background: var(--card-bg);
     color: var(--text-muted);
-    transition: 0.2s;
+    font-size: .85rem;
+    transition: .2s;
   }
-
   nav a:hover {
-    color: var(--accent);
     border-color: var(--accent);
+    color: var(--accent);
   }
 
   section {
@@ -90,10 +85,9 @@
   }
 
   h2 {
-    font-size: 1.25rem;
-    margin-bottom: .75rem;
     color: var(--accent);
-    font-weight: 500;
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
   }
 
   .card {
@@ -103,8 +97,60 @@
     border: 1px solid var(--border);
   }
 
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 780px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pill {
+    background: #21262d;
+    border: 1px solid var(--border);
+    padding: .3rem .7rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    margin: .25rem;
+    display: inline-block;
+    color: var(--text-muted);
+  }
+
+  .pill.accent {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* --- SIDE-BY-SIDE LAYOUT FOR IMAGES --- */
+  .side-by-side {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .side-by-side img {
+    width: 260px;
+    max-width: 30%;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  @media (max-width: 780px) {
+    .side-by-side {
+      flex-direction: column;
+    }
+    .side-by-side img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
   .entry {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
   }
 
   .entry-header {
@@ -115,7 +161,6 @@
 
   .entry-title {
     font-weight: 600;
-    color: var(--text);
   }
 
   .entry-meta {
@@ -125,53 +170,9 @@
 
   .entry-subtitle {
     color: var(--text-muted);
-    font-size: .9rem;
-    margin-top: .25rem;
+    margin-top: .2rem;
   }
 
-  ul {
-    margin-top: .5rem;
-    padding-left: 1.2rem;
-  }
-
-  li {
-    margin-bottom: .3rem;
-  }
-
-  img.section-image {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    margin: 1rem 0;
-  }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  @media (max-width: 800px) {
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .pill {
-    background: #21262d;
-    padding: .25rem .6rem;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    font-size: .8rem;
-    margin: .2rem;
-    display: inline-block;
-    color: var(--text-muted);
-  }
-
-  .pill.accent {
-    color: var(--accent);
-    border-color: var(--accent);
-  }
 </style>
 </head>
 
@@ -188,7 +189,7 @@
     <span>·</span>
     <a href="mailto:dwithgdi@gmail.com">dwithgdi@gmail.com</a>
     <span>·</span>
-    <a href="https://github.com/gloppypop" target="_blank">github.com/gloppypop</a>
+    <a href="https://github.com/gloppypop">github.com/gloppypop</a>
   </div>
 </header>
 
@@ -207,9 +208,8 @@
   <div class="card">
     Physics B.S. candidate and ML-focused research assistant applying Gaussian
     process regression and neural networks to turbulence simulations on HPC
-    systems. Data and analytics experience includes revenue modeling, 
-    performance analysis, survey data pipelines, and operational decision support. 
-    Strong communicator with leadership and cross-functional collaboration skills.
+    systems. Experience in data analytics, revenue modeling, performance 
+    analysis, survey pipelines, and operational decision support.
   </div>
 </section>
 
@@ -258,23 +258,24 @@
   <h2>Projects</h2>
   <div class="card">
 
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">ML Tools for Turbulence & MHD Simulations</div>
-        <div class="entry-meta">MSU — 2024–Present</div>
-      </div>
-      <div class="entry-subtitle">
-        Gaussian processes · Neural networks · Feature extraction
-      </div>
+    <!-- SIDE BY SIDE BLOCK WITH GIF -->
+    <div class="side-by-side">
+      <img src="turbulence.gif" alt="MHD Simulation GIF">
 
-      <!-- GIF using correct path -->
-      <img class="section-image" src="turbulence.gif" alt="MHD Simulation GIF">
-
-      <ul>
-        <li>Developed Gaussian process regression and neural network models for MHD turbulence data.</li>
-        <li>Extracted vorticity, Mach number statistics, and high-dimensional flow features.</li>
-        <li>Analyzed large simulation datasets on MSU’s HPC cluster.</li>
-      </ul>
+      <div>
+        <div class="entry-header">
+          <div class="entry-title">ML Tools for Turbulence & MHD Simulations</div>
+          <div class="entry-meta">MSU — 2024–Present</div>
+        </div>
+        <div class="entry-subtitle">
+          Gaussian processes · Neural networks · Simulation analysis
+        </div>
+        <ul>
+          <li>Built models for GPR and neural networks applied to turbulence simulations.</li>
+          <li>Extracted vorticity, Mach number, and high-dim field statistics.</li>
+          <li>Performed large-scale analysis on MSU supercomputing clusters.</li>
+        </ul>
+      </div>
     </div>
 
     <div class="entry">
@@ -283,8 +284,8 @@
         <div class="entry-meta">MMRS — 2023–2025</div>
       </div>
       <ul>
-        <li>Built revenue models segmented by provider/site to identify coverage gaps.</li>
-        <li>Used outputs to directly inform fiscal-year budgeting and staffing decisions.</li>
+        <li>Modeled revenue by provider and site to identify coverage gaps.</li>
+        <li>Influenced budget planning and fiscal policy decisions.</li>
       </ul>
     </div>
 
@@ -294,7 +295,7 @@
         <div class="entry-meta">MMRS — 2023–2024</div>
       </div>
       <ul>
-        <li>Created multi-year performance analysis leading to >10% raise for a staff member.</li>
+        <li>Conducted multi-year performance analysis leading to >10% raise.</li>
       </ul>
     </div>
 
@@ -306,19 +307,21 @@
   <h2>Research Experience</h2>
   <div class="card">
 
-    <!-- SUN IMAGE using correct path -->
-    <img class="section-image" src="sun.png" alt="Solar Plasma">
+    <!-- SIDE BY SIDE BLOCK WITH SUN IMAGE -->
+    <div class="side-by-side">
+      <img src="sun.png" alt="Solar Plasma Image">
 
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">Undergraduate Research Assistant</div>
-        <div class="entry-meta">MSU Institute for Cyber-Enabled Research — 2024–Present</div>
+      <div>
+        <div class="entry-header">
+          <div class="entry-title">Undergraduate Research Assistant</div>
+          <div class="entry-meta">MSU ICER — 2024–Present</div>
+        </div>
+        <ul>
+          <li>Applied GPR and neural networks to magnetohydrodynamic simulations.</li>
+          <li>Used linear algebra + numerical methods to analyze turbulence structures.</li>
+          <li>Ran simulation workflows on MSU high-performance clusters.</li>
+        </ul>
       </div>
-      <ul>
-        <li>Applied GPR and neural networks to turbulence and magnetohydrodynamic simulations.</li>
-        <li>Used numerical methods and linear algebra for feature extraction from high-dimensional data.</li>
-        <li>Ran simulation workflows on MSU’s HPC systems.</li>
-      </ul>
     </div>
 
   </div>
@@ -335,8 +338,8 @@
         <div class="entry-meta">Mid-Michigan Recovery Services — 2023–Present</div>
       </div>
       <ul>
-        <li>Used analytics to support decision-making for budgets, staffing, and operations.</li>
-        <li>Created survey pipelines, encounter reporting, and client outcome analyses.</li>
+        <li>Used analytics to guide decisions on budgets, staffing, performance, and operations.</li>
+        <li>Designed survey and encounter-report pipelines to improve outcomes.</li>
       </ul>
     </div>
 
@@ -346,7 +349,7 @@
         <div class="entry-meta">Evolve Teleservices — 2019–2023</div>
       </div>
       <ul>
-        <li>Top 10% performer; developed strong communication and client engagement skills.</li>
+        <li>Top 10% performer; strong communication and client interaction skills.</li>
       </ul>
     </div>
 
