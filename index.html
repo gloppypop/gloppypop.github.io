@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ryan McCormick | Data Science & ML Research</title>
 
-<!-- FONT AWESOME FOR ICONS -->
+<!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -100,10 +100,10 @@
     border: 1px solid var(--border);
   }
 
-  /* Skill Pills */
+  /* Updated skills: No highlight, icons preserved */
   .pill {
     background: #21262d;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--border);
     padding: .3rem .7rem;
     border-radius: 20px;
     font-size: .8rem;
@@ -111,10 +111,9 @@
     display: inline-flex;
     align-items: center;
     gap: .35rem;
-    color: var(--accent);
+    color: var(--text-muted);
   }
 
-  /* Two-column Skills Grid */
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -126,7 +125,6 @@
     }
   }
 
-  /* Side-by-side layout */
   .side-by-side {
     display: flex;
     gap: 1.5rem;
@@ -153,7 +151,6 @@
     }
   }
 
-  /* Entries & titles */
   .entry { margin-bottom: 1.4rem; }
 
   .entry-header {
@@ -203,7 +200,6 @@
   <a href="#education">Education</a>
 </nav>
 
-<!-- SUMMARY -->
 <section id="summary">
   <h2>Summary</h2>
   <div class="card">
@@ -214,12 +210,10 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
   <div class="card skills-grid">
 
-    <!-- TECHNICAL SKILLS -->
     <div>
       <h3>Technical</h3>
 
@@ -241,36 +235,33 @@
       <span class="pill"><i class="fa-solid fa-server"></i>HPC Workflows</span>
       <span class="pill"><i class="fa-solid fa-keyboard"></i>Jupyter</span>
       <span class="pill"><i class="fa-brands fa-git-alt"></i>Git</span>
-      <span class="pill"><i class="fa-solid fa-c"></i>C</span>
+      <span class="pill"><i class="fa-solid fa-code"></i>C</span>
 
     </div>
 
-    <!-- SOFT SKILLS -->
     <div>
       <h3>Soft Skills</h3>
 
       <span class="pill"><i class="fa-regular fa-comments"></i>Communication</span>
-      <span class="pill"><i class="fa-regular fa-user-group"></i>Team Leadership</span>
+      <span class="pill"><i class="fa-solid fa-users"></i>Team Leadership</span>
       <span class="pill"><i class="fa-regular fa-lightbulb"></i>Creative Problem Solving</span>
       <span class="pill"><i class="fa-regular fa-compass"></i>Strategic Planning</span>
       <span class="pill"><i class="fa-regular fa-handshake"></i>Conflict Resolution</span>
-      <span class="pill"><i class="fa-regular fa-clipboard-check"></i>Evidence-Based Decisions</span>
+      <span class="pill"><i class="fa-solid fa-clipboard-check"></i>Evidence-Based Decisions</span>
       <span class="pill"><i class="fa-regular fa-user"></i>Client Interaction</span>
       <span class="pill"><i class="fa-regular fa-chart-bar"></i>Budget Planning & Monitoring</span>
       <span class="pill"><i class="fa-regular fa-clock"></i>Time Management</span>
-      <span class="pill"><i class="fa-regular fa-layer-group"></i>Multitasking</span>
+      <span class="pill"><i class="fa-solid fa-layer-group"></i>Multitasking</span>
 
     </div>
 
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
   <div class="card">
 
-    <!-- TURBULENCE PROJECT -->
     <div class="side-by-side">
       <img class="gif-image" src="turbulence1.gif" alt="MHD Simulation GIF">
 
@@ -295,7 +286,6 @@
       </div>
     </div>
 
-    <!-- REVENUE PROJECT -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Two-Year Revenue Analysis</div>
@@ -307,7 +297,6 @@
       </ul>
     </div>
 
-    <!-- EMPLOYEE UTILIZATION -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Employee Utilization Analytics</div>
@@ -322,7 +311,6 @@
   </div>
 </section>
 
-<!-- RESEARCH -->
 <section id="research">
   <h2>Research Experience</h2>
   <div class="card">
@@ -348,7 +336,6 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <h2>Professional Experience</h2>
   <div class="card">
@@ -378,7 +365,6 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
   <h2>Education</h2>
   <div class="card">
