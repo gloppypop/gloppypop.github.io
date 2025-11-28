@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ryan McCormick | Data Science & ML Research</title>
 
+<!-- FONT AWESOME FOR ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
   :root {
     --bg: #0d1117;
@@ -97,6 +100,21 @@
     border: 1px solid var(--border);
   }
 
+  /* Skill Pills */
+  .pill {
+    background: #21262d;
+    border: 1px solid var(--accent);
+    padding: .3rem .7rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    margin: .25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    color: var(--accent);
+  }
+
+  /* Two-column Skills Grid */
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,29 +126,13 @@
     }
   }
 
-  .pill {
-    background: #21262d;
-    border: 1px solid var(--border);
-    padding: .3rem .7rem;
-    border-radius: 20px;
-    font-size: .8rem;
-    margin: .25rem;
-    display: inline-block;
-    color: var(--text-muted);
-  }
-  .pill.accent {
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-
-  /* SIDE BY SIDE FLEX */
+  /* Side-by-side layout */
   .side-by-side {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
-
   @media (max-width: 780px) {
     .side-by-side {
       flex-direction: column;
@@ -144,7 +146,6 @@
     border-radius: 10px;
     border: 1px solid var(--border);
   }
-
   @media (max-width: 780px) {
     .side-image, .gif-image {
       max-width: 100%;
@@ -152,20 +153,17 @@
     }
   }
 
-  .entry {
-    margin-bottom: 1.4rem;
-  }
+  /* Entries & titles */
+  .entry { margin-bottom: 1.4rem; }
 
   .entry-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* FIXED RIGHT ALIGNMENT */
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
-  .entry-title {
-    font-weight: 600;
-  }
+  .entry-title { font-weight: 600; }
 
   .entry-meta {
     color: var(--text-muted);
@@ -182,7 +180,6 @@
 <body>
 <div class="page">
 
-<!-- HEADER -->
 <header>
   <h1>Ryan McCormick</h1>
   <div class="subtitle">Data Science · Machine Learning · Physics</div>
@@ -197,7 +194,6 @@
   </div>
 </header>
 
-<!-- NAV -->
 <nav>
   <a href="#summary">Summary</a>
   <a href="#skills">Skills</a>
@@ -223,37 +219,47 @@
   <h2>Skills</h2>
   <div class="card skills-grid">
 
+    <!-- TECHNICAL SKILLS -->
     <div>
       <h3>Technical</h3>
-      <span class="pill accent">Python</span>
-      <span class="pill">Pandas</span>
-      <span class="pill">NumPy</span>
-      <span class="pill">Sci-kit Learn</span>
-      <span class="pill">PyTorch</span>
-      <span class="pill">SciPy</span>
-      <span class="pill">SQL</span>
-      <span class="pill">Jupyter</span>
-      <span class="pill">Git</span>
-      <span class="pill">C</span>
-      <span class="pill">LaTeX</span>
-      <span class="pill">Gaussian Processes</span>
-      <span class="pill">Neural Networks</span>
-      <span class="pill">Numerical Analysis</span>
-      <span class="pill">Linear Algebra</span>
-      <span class="pill">Matrix Algebra</span>
-      <span class="pill">HPC Workflows</span>
+
+      <span class="pill"><i class="fa-brands fa-python"></i>Python</span>
+      <span class="pill"><i class="fa-solid fa-table"></i>Pandas</span>
+      <span class="pill"><i class="fa-solid fa-calculator"></i>NumPy</span>
+      <span class="pill"><i class="fa-solid fa-wand-magic-sparkles"></i>Sci-kit Learn</span>
+      <span class="pill"><i class="fa-brands fa-python"></i>PyTorch</span>
+      <span class="pill"><i class="fa-solid fa-flask"></i>SciPy</span>
+      <span class="pill"><i class="fa-solid fa-database"></i>SQL</span>
+      <span class="pill"><i class="fa-solid fa-book"></i>LaTeX</span>
+      <span class="pill"><i class="fa-solid fa-brain"></i>Neural Networks</span>
+      <span class="pill"><i class="fa-solid fa-sigma"></i>Gaussian Processes</span>
+      <span class="pill"><i class="fa-solid fa-chart-simple"></i>Data Visualization</span>
+      <span class="pill"><i class="fa-solid fa-terminal"></i>Linux / Bash / CLI</span>
+      <span class="pill"><i class="fa-solid fa-check"></i>Numerical Analysis</span>
+      <span class="pill"><i class="fa-solid fa-check"></i>Linear Algebra</span>
+      <span class="pill"><i class="fa-solid fa-check"></i>Matrix Algebra</span>
+      <span class="pill"><i class="fa-solid fa-server"></i>HPC Workflows</span>
+      <span class="pill"><i class="fa-solid fa-keyboard"></i>Jupyter</span>
+      <span class="pill"><i class="fa-brands fa-git-alt"></i>Git</span>
+      <span class="pill"><i class="fa-solid fa-c"></i>C</span>
+
     </div>
 
+    <!-- SOFT SKILLS -->
     <div>
       <h3>Soft Skills</h3>
-      <span class="pill accent">Communication</span>
-      <span class="pill">Team Leadership</span>
-      <span class="pill">Stakeholder Alignment</span>
-      <span class="pill">Creative Problem Solving</span>
-      <span class="pill">Strategic Planning</span>
-      <span class="pill">Conflict Resolution</span>
-      <span class="pill">Evidence-Based Decisions</span>
-      <span class="pill">Client Interaction</span>
+
+      <span class="pill"><i class="fa-regular fa-comments"></i>Communication</span>
+      <span class="pill"><i class="fa-regular fa-user-group"></i>Team Leadership</span>
+      <span class="pill"><i class="fa-regular fa-lightbulb"></i>Creative Problem Solving</span>
+      <span class="pill"><i class="fa-regular fa-compass"></i>Strategic Planning</span>
+      <span class="pill"><i class="fa-regular fa-handshake"></i>Conflict Resolution</span>
+      <span class="pill"><i class="fa-regular fa-clipboard-check"></i>Evidence-Based Decisions</span>
+      <span class="pill"><i class="fa-regular fa-user"></i>Client Interaction</span>
+      <span class="pill"><i class="fa-regular fa-chart-bar"></i>Budget Planning & Monitoring</span>
+      <span class="pill"><i class="fa-regular fa-clock"></i>Time Management</span>
+      <span class="pill"><i class="fa-regular fa-layer-group"></i>Multitasking</span>
+
     </div>
 
   </div>
@@ -273,20 +279,23 @@
           <div class="entry-title">ML Tools for Turbulence & MHD Simulations</div>
           <div class="entry-meta">MSU — 2024–Present</div>
         </div>
+
         <div class="entry-subtitle">
           Gaussian processes · Neural networks · Simulation analysis
         </div>
+
         <ul>
           <li>Built machine learning models using Gaussian Process Regression and neural networks tailored to turbulence data.</li>
           <li>Extracted vorticity, Mach number, and high-dimensional field statistics from 3D simulations.</li>
           <li>Performed large-scale analysis on MSU supercomputing clusters using HPC workflows and batch scheduling.</li>
           <li>Developed preprocessing pipelines for reading, slicing, aggregating, and visualizing large field datasets.</li>
           <li>Evaluated model accuracy, generalization, and feature relevance across compressive vs. solenoidal turbulence.</li>
+          <li>Generated publication-quality visualizations of MHD structures and ML-predicted model outputs.</li>
         </ul>
       </div>
     </div>
 
-    <!-- REVENUE -->
+    <!-- REVENUE PROJECT -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Two-Year Revenue Analysis</div>
@@ -294,19 +303,19 @@
       </div>
       <ul>
         <li>Modeled revenue by provider and site to identify coverage gaps, trends in service demand, and areas needing operational adjustment.</li>
-        <li>Translated findings into budgeting guidance, which informed resource allocation and fiscal planning across the program.</li>
+        <li>Translated analytic findings into budgeting guidance, informing resource allocation and fiscal planning across the program.</li>
       </ul>
     </div>
 
-    <!-- UTILIZATION -->
+    <!-- EMPLOYEE UTILIZATION -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Employee Utilization Analytics</div>
         <div class="entry-meta">MMRS — 2023–2024</div>
       </div>
       <ul>
-        <li>Conducted multi-year performance and utilization analysis for an employee using client-hour and revenue data - which secured a raise of over 10%.</li>
-        <li>Built utilization and revenue reports that quantified productivity and ran a cost-benefit analysis that supported the proposed pay adjustment.</li>
+        <li>Conducted multi-year performance and utilization analysis using client-hour and revenue data; results supported and secured a raise of over 10%.</li>
+        <li>Built utilization and revenue reports to quantify productivity and ran a cost-benefit analysis supporting the proposed pay adjustment.</li>
       </ul>
     </div>
 
@@ -327,8 +336,8 @@
           <div class="entry-meta">MSU ICER — 2024–Present</div>
         </div>
         <ul>
-          <li>Applied Gaussian Process Regression and neural networks to analyze magnetohydrodynamic turbulence.</li>
-          <li>Used linear algebra, tensor operations, and numerical methods to study turbulence structure and flow behavior.</li>
+          <li>Applied Gaussian Process Regression and neural networks to study magnetohydrodynamic turbulence.</li>
+          <li>Used linear algebra, tensor operations, and numerical methods for turbulence structure analysis.</li>
           <li>Built ML workflows using PyTorch and scikit-learn for regression, preprocessing, and feature evaluation.</li>
           <li>Used Linux CLI and Slurm to run simulations and manage jobs on MSU’s high-performance computing clusters.</li>
           <li>Interpreted ML-derived turbulence features with research mentors to connect model outputs to physical meaning.</li>
@@ -374,13 +383,13 @@
   <h2>Education</h2>
   <div class="card">
     <strong>B.S. Physics — Michigan State University</strong><br>
-    Minor in Computational Math, Science, and Engineering (CMSE)  
+    Minor in Computational Math, Science, and Engineering (CMSE)<br>
     <div class="entry-subtitle">Expected 2025</div>
     <div class="entry-subtitle">Relevant coursework: Linear Algebra, Matrix Algebra, Numerical Analysis, Computational Physics</div>
 
     <br>
 
-    <strong>Associate of Science — Jackson College</strong>  
+    <strong>Associate of Science — Jackson College</strong><br>
     Mathematics Transfer Program
   </div>
 </section>
