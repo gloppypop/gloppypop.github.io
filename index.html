@@ -97,7 +97,6 @@
     border: 1px solid var(--border);
   }
 
-  /* Skills grid */
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,12 +123,12 @@
     border-color: var(--accent);
   }
 
-  /* Side-by-side layout */
+  /* SIDE BY SIDE FLEX */
   .side-by-side {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
-    margin-bottom: 2rem;     /* Clean spacing under GIF block */
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 780px) {
@@ -160,6 +159,7 @@
   .entry-header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start; /* FIXED RIGHT ALIGNMENT */
     flex-wrap: wrap;
   }
 
@@ -182,6 +182,7 @@
 <body>
 <div class="page">
 
+<!-- HEADER -->
 <header>
   <h1>Ryan McCormick</h1>
   <div class="subtitle">Data Science · Machine Learning · Physics</div>
@@ -196,6 +197,7 @@
   </div>
 </header>
 
+<!-- NAV -->
 <nav>
   <a href="#summary">Summary</a>
   <a href="#skills">Skills</a>
@@ -210,9 +212,9 @@
   <h2>Summary</h2>
   <div class="card">
     Physics B.S. candidate and ML-focused research assistant applying Gaussian
-    process regression and neural networks to turbulence simulations on HPC
-    systems. Experience in data analytics, revenue modeling, performance 
-    analysis, survey pipelines, and operational decision support.
+    process regression and neural networks to turbulence data on HPC systems.
+    Experience in data analytics, revenue modeling, performance analysis,
+    survey pipelines, and operational decision support.
   </div>
 </section>
 
@@ -227,7 +229,7 @@
       <span class="pill">Pandas</span>
       <span class="pill">NumPy</span>
       <span class="pill">Sci-kit Learn</span>
-      <span class="pill">PyTorch</span> <!-- ADDED -->
+      <span class="pill">PyTorch</span>
       <span class="pill">SciPy</span>
       <span class="pill">SQL</span>
       <span class="pill">Jupyter</span>
@@ -262,6 +264,7 @@
   <h2>Projects</h2>
   <div class="card">
 
+    <!-- TURBULENCE PROJECT -->
     <div class="side-by-side">
       <img class="gif-image" src="turbulence1.gif" alt="MHD Simulation GIF">
 
@@ -274,13 +277,17 @@
           Gaussian processes · Neural networks · Simulation analysis
         </div>
         <ul>
-          <li>Built models for GPR and neural networks applied to turbulence simulations.</li>
-          <li>Extracted vorticity, Mach number, and high-dimensional field statistics.</li>
-          <li>Performed large-scale analysis on MSU supercomputing clusters.</li>
+          <li>Built machine learning models using Gaussian Process Regression and neural networks tailored to turbulence data.</li>
+          <li>Extracted vorticity, Mach number, and high-dimensional field statistics from 3D simulations.</li>
+          <li>Performed large-scale analysis on MSU supercomputing clusters using HPC workflows and batch scheduling.</li>
+          <li>Developed preprocessing pipelines for reading, slicing, aggregating, and visualizing large field datasets.</li>
+          <li>Evaluated model accuracy, generalization, and feature relevance across compressive vs. solenoidal turbulence.</li>
+          <li>Generated publication-quality visualizations of MHD structures and ML-predicted model outputs.</li>
         </ul>
       </div>
     </div>
 
+    <!-- REVENUE -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Two-Year Revenue Analysis</div>
@@ -292,6 +299,7 @@
       </ul>
     </div>
 
+    <!-- UTILIZATION -->
     <div class="entry">
       <div class="entry-header">
         <div class="entry-title">Employee Utilization Analytics</div>
@@ -319,9 +327,14 @@
           <div class="entry-meta">MSU ICER — 2024–Present</div>
         </div>
         <ul>
-          <li>Applied GPR and neural networks to magnetohydrodynamic simulations.</li>
-          <li>Used linear algebra + numerical methods to analyze turbulence structures.</li>
-          <li>Ran simulation workflows on MSU’s HPC clusters.</li>
+          <li>Applied Gaussian Process Regression and neural networks to study magnetohydrodynamic turbulence.</li>
+          <li>Used linear algebra, tensor operations, and numerical methods for turbulence structure analysis.</li>
+          <li>Built and experimented with PyTorch deep learning models for turbulence prediction tasks.</li>
+          <li>Developed scikit-learn pipelines for regression, preprocessing, and feature importance evaluation.</li>
+          <li>Became proficient with Linux CLI for HPC file management and batch simulations.</li>
+          <li>Ran simulation workflows on MSU HPC clusters, including Slurm scheduling and multi-node jobs.</li>
+          <li>Studied data science tools including dimensionality reduction, kernel methods, and model validation.</li>
+          <li>Collaborated with research mentors to interpret ML-derived turbulence features and physical significance.</li>
         </ul>
       </div>
     </div>
@@ -341,7 +354,7 @@
       </div>
       <ul>
         <li>Used analytics to guide decisions on budgets, staffing, performance, and operations.</li>
-        <li>Created survey/encounter reporting pipelines for client outcomes.</li>
+        <li>Developed survey pipelines and encounter reporting frameworks to track client outcomes.</li>
       </ul>
     </div>
 
@@ -352,7 +365,7 @@
       </div>
       <ul>
         <li>Top 10% performer; strong communication and client interaction skills.</li>
-        <li>Used creative problem solving to adapt pitch strategies for diverse caller needs.</li> <!-- ADDED -->
+        <li>Used creative problem solving to adapt pitch strategies for diverse caller needs.</li>
       </ul>
     </div>
 
