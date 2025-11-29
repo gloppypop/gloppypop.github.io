@@ -100,7 +100,7 @@
     border: 1px solid var(--border);
   }
 
-  /* Updated skills: No highlight, icons preserved */
+  /* Updated skills: neutral pills with icons */
   .pill {
     background: #21262d;
     border: 1px solid var(--border);
@@ -119,6 +119,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+
   @media (max-width: 780px) {
     .skills-grid {
       grid-template-columns: 1fr;
@@ -131,6 +132,7 @@
     align-items: flex-start;
     margin-bottom: 1.25rem;
   }
+
   @media (max-width: 780px) {
     .side-by-side {
       flex-direction: column;
@@ -144,6 +146,7 @@
     border-radius: 10px;
     border: 1px solid var(--border);
   }
+
   @media (max-width: 780px) {
     .side-image, .gif-image {
       max-width: 100%;
@@ -177,18 +180,25 @@
 <body>
 <div class="page">
 
+<!-- HEADER -->
 <header>
   <h1>Ryan McCormick</h1>
   <div class="subtitle">Data Science · Machine Learning · Physics</div>
+
   <div class="contact">
     <span>Jackson, MI</span>
     <span>·</span>
+    <span>313-580-5412</span>
+    <span>·</span>
     <a href="mailto:dwithgdi@gmail.com">dwithgdi@gmail.com</a>
     <span>·</span>
-    <a href="https://github.com/gloppypop">github.com/gloppypop</a>
+    <a href="https://github.com/gloppypop" target="_blank">github.com/gloppypop</a>
+    <span>·</span>
+    <a href="https://www.linkedin.com/in/ryan-mccormick-344855145" target="_blank">My LinkedIn</a>
   </div>
 </header>
 
+<!-- NAV -->
 <nav>
   <a href="#summary">Summary</a>
   <a href="#skills">Skills</a>
@@ -198,6 +208,7 @@
   <a href="#education">Education</a>
 </nav>
 
+<!-- SUMMARY -->
 <section id="summary">
   <h2>Summary</h2>
   <div class="card">
@@ -208,6 +219,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
   <div class="card skills-grid">
@@ -237,6 +249,7 @@
 
     </div>
 
+    <!-- SOFT SKILLS -->
     <div>
       <h3>Soft Skills</h3>
 
@@ -256,10 +269,12 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
   <div class="card">
 
+    <!-- TURBULENCE PROJECT -->
     <div class="side-by-side">
       <img class="gif-image" src="turbulence1.gif" alt="MHD Simulation GIF">
 
@@ -279,6 +294,7 @@
           <li>Performed large-scale analysis on MSU supercomputing clusters using HPC workflows and batch scheduling.</li>
           <li>Developed preprocessing pipelines for reading, slicing, aggregating, and visualizing large field datasets.</li>
           <li>Evaluated model accuracy, generalization, and feature relevance across compressive vs. solenoidal turbulence.</li>
+          <li>Generated publication-quality visualizations of MHD structures and ML-predicted model outputs.</li>
         </ul>
       </div>
     </div>
@@ -308,6 +324,7 @@
   </div>
 </section>
 
+<!-- RESEARCH -->
 <section id="research">
   <h2>Research Experience</h2>
   <div class="card">
@@ -333,6 +350,7 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
   <h2>Professional Experience</h2>
   <div class="card">
@@ -362,6 +380,7 @@
   </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
   <h2>Education</h2>
   <div class="card">
